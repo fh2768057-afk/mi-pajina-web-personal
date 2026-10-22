@@ -1,0 +1,342 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi página web</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #141e30, #243b55);
+            color: white;
+            min-height: 100vh;
+        }
+
+        header {
+            padding: 25px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        header h2 {
+            font-size: 25px;
+        }
+
+        .bienvenida {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 25px;
+        }
+
+        .bienvenida h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .bienvenida p {
+            font-size: 18px;
+            max-width: 600px;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        .boton {
+            background: #00c6ff;
+            color: #10233e;
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .boton:hover {
+            background: white;
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #cccccc;
+        }
+
+        @media (max-width: 600px) {
+            .bienvenida h1 {
+                font-size: 34px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Mi Página Web</h2>
+    </header>
+
+    <main class="bienvenida">
+        <h1>¡Bienvenidos a mi página web!</h1>
+
+        <p>
+            Es un gusto tenerte aquí.
+            Explora nuestra página, descubre cosas interesantes
+            y disfruta de todo lo que tenemos para ti.
+        </p>
+
+        <a href="#informacion" class="boton">
+            Comenzar
+        </a>
+    </main>
+
+    <section id="informacion" style="text-align:center; padding:40px;">
+        <h2>¡Gracias por visitarnos!</h2>
+        <p style="margin-top:15px;">
+            Aquí comienza una nueva experiencia.
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 Mi Página Web. Todos los derechos reservados.</p>
+    </footer>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi página web</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f4f8;
+            color: #222;
+        }
+
+        header {
+            background: #102b50;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        nav {
+            background: #0879cf;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .bienvenida {
+            background: linear-gradient(135deg, #102b50, #0879cf);
+            color: white;
+            text-align: center;
+            padding: 65px 20px;
+        }
+
+        .bienvenida h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .bienvenida p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .boton {
+            display: inline-block;
+            background: white;
+            color: #102b50;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contenido {
+            padding: 40px 7%;
+            text-align: center;
+        }
+
+        .contenido h2 {
+            margin-bottom: 25px;
+            color: #102b50;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 25px;
+        }
+
+        .tarjeta {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px #00000020;
+            padding-bottom: 20px;
+        }
+
+        .tarjeta img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .tarjeta h3 {
+            margin: 15px;
+            color: #102b50;
+        }
+
+        .tarjeta p {
+            margin: 10px 15px 20px;
+        }
+
+        .tarjeta a {
+            display: inline-block;
+            background: #0879cf;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+        footer {
+            background: #102b50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            .galeria {
+                grid-template-columns: 1fr;
+            }
+
+            .bienvenida h1 {
+                font-size: 30px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Mi Página Web</h2>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="#galeria">Galería</a>
+        <a href="#informacion">Información</a>
+    </nav>
+
+    <section class="bienvenida">
+        <h1>¡Bienvenidos a mi página web!</h1>
+
+        <p>
+            Explora nuestras secciones, descubre cosas interesantes
+            y disfruta de esta página.
+        </p>
+
+        <a href="#galeria" class="boton">Explorar ahora</a>
+    </section>
+
+    <section class="contenido" id="galeria">
+        <h2>Explora nuestras páginas</h2>
+
+        <div class="galeria">
+
+            <div class="tarjeta">
+                <a href="pagina1.html">
+                    <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=800&q=80"
+                         alt="Paisaje natural">
+                </a>
+                <h3>Naturaleza</h3>
+                <p>Descubre hermosos paisajes.</p>
+                <a href="pagina1.html">Entrar</a>
+            </div>
+
+            <div class="tarjeta">
+                <a href="pagina2.html">
+                    <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=800&q=80"
+                         alt="Motocicleta">
+                </a>
+                <h3>Motos</h3>
+                <p>Explora el mundo de las motocicletas.</p>
+                <a href="pagina2.html">Entrar</a>
+            </div>
+
+            <div class="tarjeta">
+                <a href="pagina3.html">
+                    <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=800&q=80"
+                         alt="Dispositivos tecnológicos">
+                </a>
+                <h3>Tecnología</h3>
+                <p>Conoce más sobre la tecnología.</p>
+                <a href="pagina3.html">Entrar</a>
+            </div>
+
+            <div class="tarjeta">
+                <a href="pagina4.html">
+                    <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=800&q=80"
+                         alt="Espacio de trabajo">
+                </a>
+                <h3>Información</h3>
+                <p>Encuentra más información interesante.</p>
+                <a href="pagina4.html">Entrar</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contenido" id="informacion">
+        <h2>Sobre esta página</h2>
+        <p>
+            Esta página está diseñada para explorar diferentes temas
+            de una manera sencilla y organizada.
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 Mi Página Web</p>
+    </footer>
+
+</body>
+</html>
+
+</body>
+</html>
